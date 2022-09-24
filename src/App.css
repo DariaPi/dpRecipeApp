@@ -1,38 +1,95 @@
 .App {
   text-align: center;
+  font-family: 'Caveat', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.video {
+  object-fit: cover;
+  z-index: -1;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  opacity: .5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  text-shadow: #FC0 1px 0 10px;
+  font-size: 45px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formBox {
+  margin: 20px;
+}
+
+.input {
+  padding: 10px 20px;
+  border: 3px solid #000;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  width: 50%;
+}
+
+.ctaBtn {
+  padding: 5px;
+  text-transform: uppercase;
+  border: 3px solid #FFF;
+  background-color: #000;
+  color: #FFF;
+  font-family: 'Caveat', cursive;
+  font-size: 15px;
+  transition: .5s;
+}
+
+.ctaBtn:hover {
+  cursor: pointer;
+  transition: 1s;
+  border: 3px solid #000;
+  background-color: #FFF;
+  color: #000;
+}
+
+.recipeBox {
+  margin: 5% 20%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  border: 3px solid #000;
+  background-color: rgba(255, 255, 255, .5);
 }
 
-.App-link {
-  color: #61dafb;
+.recipePic {
+  border: 2px solid #000;
+  max-width: 90%;
+  width: 300px;
+  height: auto;
+  margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+p {
+  font-size: 18px;
+}
+
+li {
+  text-decoration: none;
+  font-size: 20px;
+  text-align: start;
+  /* list-style: none; */
+  margin-right: 5px;
+}
+
+.recipeTxt {
+  width: 300px;
+}
+
+a {
+  color: #000;
+}
+
+@media all and (max-width: 800px) {
+  .recipeBox {
+    margin: 5%;
   }
 }
