@@ -5,7 +5,7 @@ import RecipeComponent from './RecipeComponent';
 
 function App() {
   const My_ID = "18179288";
-  const My_Key = "21e8c86ee8d491649a991160e7b56e6b	";
+  const My_Key = "21e8c86ee8d491649a991160e7b56e6b";
 
   const [mySearch, setMySearch] = useState ("");
   const [recipesData, setRecipesData] = useState ([]);
